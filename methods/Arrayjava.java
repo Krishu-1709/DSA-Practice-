@@ -3,7 +3,7 @@ public class Arrayjava {
 
 
         int[] ecx = {-1,2,3,1,2,3,4,234,5,5,43,456543,5,43,5,432,5,43,24,543,2,454};
-        RevPartOfArray(ecx,2,9);
+        BubbleSort(ecx);
 
 
 
@@ -114,5 +114,22 @@ public class Arrayjava {
             System.out.print(arr[i]+" ");
         }// This prints all the elements of array
         System.out.print(" ");
+    }
+    public static void BubbleSort(int[] arr){
+        for (int j = 0; j < arr.length; j++) {
+
+
+
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[j]>arr[i]){
+                    swap(arr,j,i);
+                }
+
+            }
+        }
+        for (int a = 0; a < arr.length; a++) {
+            System.out.print(arr[a]+" ");
+
+        }
     }
 }
